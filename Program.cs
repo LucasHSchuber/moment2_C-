@@ -1,4 +1,5 @@
 ﻿//Application for calculating day a person was born
+//Lucas Schuber
 using System;
 
 namespace Program
@@ -60,7 +61,6 @@ namespace Program
                                 {
 
                                     d_display = d.ToString("D2");
-                                    //console date formatted
                                     Console.WriteLine($"Birthdate: {c}{y}:{m_display}:{d_display}");
 
                                     int calc1 = (13 * (m + 1)) / 5;
