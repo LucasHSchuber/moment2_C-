@@ -1,4 +1,5 @@
-﻿using System;
+﻿//Application for calculating day a person was born
+using System;
 
 namespace Program
 {
@@ -15,8 +16,9 @@ namespace Program
                 int input_year;
                 bool isValidYear = int.TryParse(Console.ReadLine(), out input_year);
 
-                //CHECK - if user input i 4 digits
-                if (isValidYear && input_year >= 1000 && input_year <= 9999)
+                int current_year = 2023;
+                //CHECK - if user input i 4 digits and year is before 2024
+                if (isValidYear && input_year >= 1000 && input_year <= 9999 && input_year < current_year+1)
                 {
 
                     int m;
